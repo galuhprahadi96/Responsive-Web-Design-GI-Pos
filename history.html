@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="stylesheet" href="./assets/style.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <title>Pos Food</title>
+  </head>
+  <body class="transparant">
+    <header class="container-fluid">
+      <div class="row">
+        <div class="header-title col">
+          <div class="menu">
+            <a href="">
+              <img class="icon" src="./assets/img/icon/menu.png" />
+            </a>
+          </div>
+          <div class="title mr-5">
+            <p>History</p>
+          </div>
+          <div class="search">
+            <!-- <img class="icon" src="./assets/img/icon/magnifying-glass.png" /> -->
+          </div>
+        </div>
+        <!-- <div class="col-md-4 cart">
+          <p>Cart <span class="badge badge-primary">0</span></p>
+        </div> -->
+      </div>
+    </header>
+    <!-- end header -->
+
+    <!-- navigasi -->
+    <nav>
+      <ul class="navigation">
+        <li>
+          <a href="index.html">
+            <img class="icon" src="./assets/img/icon/fork.png" />
+          </a>
+        </li>
+        <li>
+          <a href="history.html">
+            <img class="icon" src="./assets/img/icon/clipboard.png" />
+          </a>
+        </li>
+        <li>
+          <a data-toggle="modal" data-target="#modalAdd" href="#">
+            <img class="icon" src="./assets/img/icon/add.png" />
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- end navigasi -->
+
+    <!-- main -->
+    <main class="row">
+      <div class="col-md-12">
+        <div class="card-history">
+          <div class="income col-sm-12 col-md-3">
+            <div class="card-body">
+              <p>Today's Income</p>
+              <p><strong>Rp. 1.000.000</strong></p>
+              <p><small class="text-muted">+2% Yesterday</small></p>
+            </div>
+          </div>
+          <div class="order col-sm-12 col-md-3">
+            <div class="card-body">
+              <p>Order</p>
+              <p><strong>3.270</strong></p>
+              <p><small class="text-muted">+5% Last Week</small></p>
+            </div>
+          </div>
+          <div class="total-income col-sm-12 col-md-3">
+            <div class="card-body">
+              <p>This Year's Income</p>
+              <p><strong>Rp. 100.000.000.00</strong></p>
+              <p><small class="text-muted">+10% Last Year</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="revenue col-md-12">
+        <div class="chart">
+          <p class="text-left pl-5 pt-2">Revenue</p>
+          <div class="card-body" style="padding-top: 0;">
+            <canvas id="myChart" style="max-height: 400px;"></canvas>
+          </div>
+        </div>
+      </div>
+      <div class="recent col-md-12">
+        <div class="recent-order">
+          <div class="card-body table-responsive">
+            <table class="table">
+              <thead style="border-bottom: 1px solid black;">
+                <tr>
+                  <th scope="col">INVOICE</th>
+                  <th scope="col">CHASIER</th>
+                  <th scope="col">DATE</th>
+                  <th scope="col">ORDER</th>
+                  <th scope="col">AMOUNT</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-muted">#10928</td>
+                  <td class="text-muted">Chasier 1</td>
+                  <td class="text-muted">06 October 2019</td>
+                  <td class="text-muted">Ice Tea, Salad With peanut sauce</td>
+                  <td class="text-muted">Rp. 120.000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- modalAdd -->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="modalAdd"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalAdd"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalAdd">Add Item</h5>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Name</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" placeholder="Name" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Image</label>
+                <div class="col-sm-10">
+                  <input type="file" class="form-control" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Price</label>
+                <div class="col-sm-10">
+                  <input
+                    type="number"
+                    class="form-control price"
+                    placeholder="Price"
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Category</label>
+                <div class="col-sm-10">
+                  <select class="custom-select">
+                    <option>Category</option>
+                    <option value="food">Food</option>
+                    <option value="drink">Drink</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-cancel" data-dismiss="modal">
+              Cancel
+            </button>
+            <button type="button" class="btn btn-add">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modalCheckout -->
+    <div
+      class="modal fade"
+      id="modalCheckout"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalCheckout"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Checkout</h5>
+            <h5 class="modal-title">
+              Receipt no: #010410919
+            </h5>
+          </div>
+          <div class="modal-cashier">
+            <small>Chasier : Pevita Pierce</small>
+          </div>
+          <div class="modal-body">
+            <div class="menu-item-order">
+              <div><strong>Black Forest 1x</strong></div>
+              <div>RP 30.000</div>
+            </div>
+            <div class="menu-item-order">
+              <div><strong>Black Forest 1x</strong></div>
+              <div>RP 30.000</div>
+            </div>
+            <div class="menu-item-order">
+              <div><strong>Black Forest 1x</strong></div>
+              <div>RP 30.000</div>
+            </div>
+            <div class="ppn-order">
+              <div><strong>PPN 10%</strong></div>
+              <div>RP 10.000</div>
+            </div>
+            <p class="text-right">Total : Rp. 73.000</p>
+            <p>Payment : Cash</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-print">
+              Print
+            </button>
+            <p>Or</p>
+            <button type="button" class="btn btn-email">Send Email</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- endModal -->
+
+    <!-- Optional JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var ctx = document.getElementById("myChart").getContext("2d");
+      var chart = new Chart(ctx, {
+        // The type of chart we want to create
+        type: "line",
+
+        // The data for our dataset
+        data: {
+          labels: [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+          ],
+          datasets: [
+            {
+              label: "My First dataset",
+              backgroundColor: "rgb(255, 99, 132)",
+              borderColor: "rgb(255, 99, 132)",
+              data: [0, 10, 5, 2, 20, 30, 45],
+            },
+          ],
+        },
+
+        // Configuration options go here
+        options: {},
+      });
+    </script>
+  </body>
+</html>

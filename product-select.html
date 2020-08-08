@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="stylesheet" href="./assets/style.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <title>Pos Food</title>
+  </head>
+  <body class="transparant">
+    <header class="container-fluid">
+      <div class="row">
+        <div class="header-title col-md-8">
+          <div class="menu">
+            <a href="">
+              <img class="icon" src="./assets/img/icon/menu.png" />
+            </a>
+          </div>
+          <div class="title">
+            <p>Food Items</p>
+          </div>
+          <div class="search">
+            <img class="icon" src="./assets/img/icon/magnifying-glass.png" />
+          </div>
+        </div>
+        <div class="col-md-4 cart">
+          <p>Cart <span class="badge badge-primary">3</span></p>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+
+    <!-- navigasi -->
+    <nav>
+      <ul class="navigation">
+        <li>
+          <a href="index.html">
+            <img class="icon" src="./assets/img/icon/fork.png" />
+          </a>
+        </li>
+        <li>
+          <a href="history.html">
+            <img class="icon" src="./assets/img/icon/clipboard.png" />
+          </a>
+        </li>
+        <li>
+          <a data-toggle="modal" data-target="#modalAdd" href="#">
+            <img class="icon" src="./assets/img/icon/add.png" />
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- end navigasi -->
+
+    <!-- main -->
+    <main class="row">
+      <div class="col-md-8">
+        <div class="row product-items">
+          <div class="col-md-4 col-sm col item">
+            <img class="card-img-top" src="./assets/img/product/bear.png" />
+            <div class="item-body">
+              <div><strong>Espresso</strong></div>
+              <div>RP 10.000</div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm item">
+            <img
+              class="card-img-top active"
+              src="./assets/img/product/firdaus-roslan-pN769u0KHNA-unsplash.png"
+            />
+
+            <div class="item-body">
+              <div><strong>Coffe Latte</strong></div>
+              <div>RP 15.000</div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm item">
+            <img
+              class="card-img-top"
+              src="./assets/img/product/jeremy-ricketts-6ZnhM-xBpos-unsplash.png"
+            />
+            <div class="item-body">
+              <div><strong>Cappucino</strong></div>
+              <div>RP 5.000</div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm item">
+            <img
+              class="card-img-top"
+              src="./assets/img/product/redvelvet.png"
+            />
+
+            <div class="item-body">
+              <div><strong>Red Velvet Latte</strong></div>
+              <div>RP 33.000</div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm item">
+            <img class="card-img-top" src="./assets/img/product/chocorum.png" />
+
+            <div class="item-body">
+              <div><strong>Choco Rhum</strong></div>
+              <div>RP 28.000</div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm item">
+            <img
+              class="card-img-top active"
+              src="./assets/img/product/blackforest.png"
+            />
+
+            <div class="item-body">
+              <div><strong>Black Forest</strong></div>
+              <div>RP 30.000</div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm item">
+            <img
+              class="card-img-top"
+              src="./assets/img/product/chickenkatsu.png"
+            />
+
+            <div class="item-body">
+              <div><strong>Chicken Katsu Dabu-dabu</strong></div>
+              <div>RP 60.000</div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm item">
+            <img
+              class="card-img-top active"
+              src="./assets/img/product/salmon.png"
+            />
+
+            <div class="item-body">
+              <div><strong>Salmon Truffle Teriyaki</strong></div>
+              <div>RP 10.000</div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm item">
+            <img class="card-img-top" src="./assets/img/product/wiener.png" />
+            <div class="item-body">
+              <div><strong>Wiener Schnitzel</strong></div>
+              <div>RP 69.000</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 cart-item">
+        <div class="item-order">
+          <img
+            src="./assets/img/product/firdaus-roslan-pN769u0KHNA-unsplash.png"
+            width="100px"
+            height="100px"
+          />
+          <div class="selected-items">
+            <p>Coffe Latte</p>
+            <div class="quantity buttons_added">
+              <input type="button" value="-" class="minus" /><input
+                type="number"
+                step="1"
+                min="1"
+                max=""
+                name="quantity"
+                value="1"
+                title="Qty"
+                class="input-text qty text"
+                size="4"
+                pattern=""
+                inputmode=""
+              /><input type="button" value="+" class="plus" />
+            </div>
+          </div>
+          <div class="price"><p>Rp. 15.000</p></div>
+        </div>
+        <div class="item-order">
+          <img
+            src="./assets/img/product/blackforest.png"
+            width="100px"
+            height="100px"
+          />
+          <div class="selected-items">
+            <p>Black Forest</p>
+            <div class="quantity buttons_added">
+              <input type="button" value="-" class="minus" /><input
+                type="number"
+                step="1"
+                min="1"
+                max=""
+                name="quantity"
+                value="1"
+                title="Qty"
+                class="input-text qty text"
+                size="4"
+                pattern=""
+                inputmode=""
+              /><input type="button" value="+" class="plus" />
+            </div>
+          </div>
+          <div class="price"><p>Rp. 30.000</p></div>
+        </div>
+        <div class="item-order">
+          <img
+            src="./assets/img/product/salmon.png"
+            width="100px"
+            height="100px"
+          />
+          <div class="selected-items">
+            <p>Salmon Truffle</p>
+            <div class="quantity buttons_added">
+              <input type="button" value="-" class="minus" /><input
+                type="number"
+                step="1"
+                min="1"
+                max=""
+                name="quantity"
+                value="1"
+                title="Qty"
+                class="input-text qty text"
+                size="4"
+                pattern=""
+                inputmode=""
+              /><input type="button" value="+" class="plus" />
+            </div>
+          </div>
+          <div class="price"><p>Rp. 30.000</p></div>
+        </div>
+
+        <!-- checkout -->
+        <div class="checkout align-text-bottom">
+          <div class="total">
+            <p>Total:</p>
+            <p>Rp. 106.000</p>
+          </div>
+          <p class="text-left text-muted">*Belum Termasuk PPN</p>
+          <button
+            type="button"
+            class="btn btn-checkout"
+            data-toggle="modal"
+            data-target="#modalCheckout"
+          >
+            Checkout
+          </button>
+          <button type="button" class="btn btn-cancels">Cancel</button>
+        </div>
+      </div>
+    </main>
+
+    <!-- modalAdd -->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="modalAdd"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalAdd"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalAdd">Add Item</h5>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Name</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" placeholder="Name" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Image</label>
+                <div class="col-sm-10">
+                  <input type="file" class="form-control" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Price</label>
+                <div class="col-sm-10">
+                  <input
+                    type="number"
+                    class="form-control price"
+                    placeholder="Price"
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Category</label>
+                <div class="col-sm-10">
+                  <select class="custom-select">
+                    <option>Category</option>
+                    <option value="food">Food</option>
+                    <option value="drink">Drink</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-cancel" data-dismiss="modal">
+              Cancel
+            </button>
+            <button type="button" class="btn btn-add">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modalCheckout -->
+    <div
+      class="modal fade"
+      id="modalCheckout"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalCheckout"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Checkout</h5>
+            <h5 class="modal-title">
+              Receipt no: #010410919
+            </h5>
+          </div>
+          <div class="modal-cashier">
+            <small>Chasier : Pevita Pierce</small>
+          </div>
+          <div class="modal-body">
+            <div class="menu-item-order">
+              <div><strong>Coffee Latte 1x</strong></div>
+              <div>RP 15.000</div>
+            </div>
+            <div class="menu-item-order">
+              <div><strong>Black Forest 1x</strong></div>
+              <div>RP 30.000</div>
+            </div>
+            <div class="menu-item-order">
+              <div><strong>Salmon Truffle 1x</strong></div>
+              <div>RP 60.000</div>
+            </div>
+            <div class="ppn-order">
+              <div><strong>PPN 10%</strong></div>
+              <div>RP 10.500</div>
+            </div>
+            <p class="text-right">Total : Rp. 115.500</p>
+            <p>Payment : Cash</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-print">
+              Print
+            </button>
+            <p>Or</p>
+            <button type="button" class="btn btn-email">Send Email</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- endModal -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
