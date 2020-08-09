@@ -55,7 +55,7 @@ header .header-title {
 .search {
   /* position: relative; */
   display: flex;
-  background-color: #f1e5e5;
+  /* background-color: #f1e5e5; */
   /* flex: 1; */
   border-radius: 10px;
   margin: auto;
