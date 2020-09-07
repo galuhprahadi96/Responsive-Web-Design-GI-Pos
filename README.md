@@ -14,7 +14,7 @@
     
 2. Running!
 
-    open in your favorite browser `index.html`!
+    open in your favorite browser `index.html`
 
 ## Live
 [Live Demo](https://hardcore-chandrasekhar-734cbe.netlify.app/)
