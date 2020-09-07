@@ -6,33 +6,15 @@
 [![HTML](https://img.shields.io/badge/HTML-5-yello.svg?style=rounded-square)](https://www.w3schools.com/html/)
 [![CSS](https://img.shields.io/badge/CSS-3-yello.svg?style=rounded-square)](https://www.w3schools.com/css/)
 
-## How to run the app ?
-1. `git clone`repository
-2. open in your favorite browser `index.html`
-
-## ⚡️ Live
-[Check it live](https://nuxt-markdown-blog-starter.netlify.com/)
-
-## ✨ Quick start
-
-1.  **Clone this repository.**
-
+## Quick start ?
+1. Clone this repository
     ```sh
-    git clone https://github.com/marinaaisa/nuxt-markdown-blog-starter.git
+    git clone https://github.com/galuhprahadi96/Responsive-Web-Design-GI-Pos.git
     ```
+    
+2. Running!
 
-2.  **Start developing.**
+    open in your favorite browser `index.html`!
 
-    Navigate into your new site’s directory and start it up.
-
-    ```sh
-    cd nuxt-markdown-blog-starter/
-    npm install
-    npm run dev
-    ```
-
-3.  **Running!**
-
-    Your site is now running at `http://localhost:3000`!
-
-Demo : https://hardcore-chandrasekhar-734cbe.netlify.app/
+## Live
+[Check it live](https://hardcore-chandrasekhar-734cbe.netlify.app/)
